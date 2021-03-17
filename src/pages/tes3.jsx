@@ -30,7 +30,7 @@ const Tes3 = () => {
     const createData = (e) => {
         e.preventDefault();
         console.log(inputJudulBuku)
-        if(inputJudulBuku === undefined){
+        if(inputJudulBuku === undefined || inputJudulBuku === ''){
             return alert("Judul Tidak Boleh Kosong")
         }else{
             if(idEdit){
