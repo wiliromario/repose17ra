@@ -1,6 +1,7 @@
 import { Button } from 'react-bootstrap';
 import React, { useState } from 'react';
 import GoogleLogin from 'react-google-login';
+import { Link } from 'react-router-dom';
 
 const Tes5 = () => {
     const [name, setName] = useState()
@@ -32,6 +33,13 @@ const Tes5 = () => {
                 height: '100vh',
                 flexDirection:"column"
             }}>
+                <div>
+                    <Link to="/">
+                        <p> 
+                            {"< Back"}
+                        </p>
+                    </Link>
+                </div>
                 <GoogleLogin
                     clientId={'876694988298-frsnd1qdb5ubu6gstp4t0mi25h7t55m9.apps.googleusercontent.com'}
                     buttonText="Log in with Google"
