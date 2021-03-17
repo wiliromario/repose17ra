@@ -99,7 +99,7 @@ const Tes1 = () => {
         )
     }
     return(
-        <div style ={{
+        <div data-test="container" style ={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -145,10 +145,10 @@ const Tes1 = () => {
                         <Form.Check type="checkbox" label="Show Password" 
                         onChange={(e)=> setShowPassword(e.target.checked)}/>
                     </Form.Group>
-                    <Button variant="primary" type="submit" onClick={(e)=>clickLoginFunc(e)}>
+                    <Button data-test="btn-login" variant="primary" type="submit" onClick={(e)=>clickLoginFunc(e)}>
                         Login
                     </Button>
-                    <Button variant="primary" type="submit" style={{marginLeft:'10px'}} onClick={(e)=>clickRegisterFunc(e)}>
+                    <Button data-test="btn-register" variant="primary" type="submit" style={{marginLeft:'10px'}} onClick={(e)=>clickRegisterFunc(e)}>
                         Register
                     </Button>
                     <ShowError/>
